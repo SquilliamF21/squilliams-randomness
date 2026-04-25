@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Coins</title>
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     7 :)
@@ -12,5 +13,11 @@
     <img src="coin.gif" alt="your internet sucks" width="100">
     <img src="coin.gif" alt="your internet sucks" width="100">
     <img src="coin.gif" alt="your internet sucks" width="100">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
 </body>
 </html>
